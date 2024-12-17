@@ -1,0 +1,53 @@
+/* Container */
+.scroll-down-container {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1000;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Bouncing Arrow */
+  .arrow {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-right: 3px solid #42a5f5;
+    border-bottom: 3px solid #42a5f5;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+  }
+  
+  /* Scroll Text */
+  .text {
+    margin-top: 0.5rem;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-family: "Courier New", Courier, monospace;
+    opacity: 0.8;
+  }
+  
+  /* Fade-In Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Subtle Bounce Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateY(-8px) rotate(45deg);
+    }
+  }
+  

@@ -1,0 +1,51 @@
+/* TechnicalProfile.css */
+
+.technical-profile {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* White text */
+  font-family: 'JetBrains Mono', monospace; /* Custom monospace font */
+  padding: 20px;
+
+
+h3.section-title {
+  color: #42a5f5; /* Light blue for section titles */
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+h4.subsection-title {
+  color: #ffca28; /* Yellow color for subsection titles */
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;
+}
+
+li.content-item {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #42a5f5; /* Light blue links */
+  text-decoration: none;
+}
+
+a:hover .technical-profile {
+  text-decoration: underline; /* Underline on hover */
+}
+
+span .technical-profile {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+/* Styling for the emojis next to preferences and special interests */
+span.emoji .technical-profile {
+  font-size: 18px;
+}
+}

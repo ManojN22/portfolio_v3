@@ -1,0 +1,46 @@
+/* General container */
+.name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e1e; /* Dark background */
+    color: #e0e0e0;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+  }
+  
+  /* Typing Animation for Name */
+  .typing-animation {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #42a5f5;
+    width: 0;
+    margin-bottom: 1rem;
+    animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+  }
+  
+  .highlight {
+    color: #42a5f5; /* Highlighted text */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 21ch; /* Adjust to the length of your text */
+    }
+  }
+  
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #42a5f5;
+    }
+  }

@@ -1,3 +1,11 @@
+/* Tailwind CSS reset */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#333333] text-gray-200 font-sans;
+}
+.viewport{
+  margin-left: 4em;
+}
