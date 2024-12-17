@@ -5,6 +5,8 @@
   color: #e0e0e0; /* White text */
   font-family: 'JetBrains Mono', monospace; /* Custom monospace font */
   padding: 20px;
+  height: 95vh;
+  overflow-y: scroll;
 
 
 h3.section-title {

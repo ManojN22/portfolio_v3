@@ -4,12 +4,12 @@ import { FaHome, FaUser, FaBriefcase, FaTasks, FaGithub, FaLinkedin, FaCog, FaFi
 
 
 const sidebarTopLinks = [
-    { href: "/", label: "Home", icon: <FaHome size={24} /> },
-    { href: "/about", label: "About Me", icon: <FaUser size={24} /> },  // Added About Me link
-    { href: "/work", label: "Work", icon: <FaBriefcase size={24} /> },
-    { href: "/projects", label: "Projects", icon: <FaTasks size={24} /> },  
-    { href: "https://github.com/caglarturali", label: "GitHub", icon: <FaGithub size={24} /> },
-    { href: "https://linkedin.com/in/caglarturali", label: "LinkedIn", icon: <FaLinkedin size={24} /> },
+    { href: "#home-section", label: "Home", icon: <FaHome size={24} /> },
+    { href: "#aboutme-section", label: "About Me", icon: <FaUser size={24} /> },  // Added About Me link
+    { href: "#experince-section", label: "Work", icon: <FaBriefcase size={24} /> },
+    { href: "#projects-section", label: "Projects", icon: <FaTasks size={24} /> },  
+    { href: "https://github.com/ManojN22", label: "GitHub", icon: <FaGithub size={24} /> },
+    { href: "https://linkedin.com/in/manoj-nandakumar", label: "LinkedIn", icon: <FaLinkedin size={24} /> },
     { href: "/resume", label: "Resume", icon: <FaFilePdf size={24} /> },  
     
   ];

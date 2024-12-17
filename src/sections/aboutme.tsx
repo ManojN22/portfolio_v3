@@ -3,7 +3,7 @@ import Skills from '~/components/skills/skills';
 import './styles.css';
 const Aboutme: React.FC = () => {
   return (
-    <div className='aboutme'>
+    <div className='aboutme section' id='aboutme-section'>
       <Navigation />
       <Skills/>
     </div>

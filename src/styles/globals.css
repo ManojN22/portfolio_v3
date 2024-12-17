@@ -3,9 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-[#333333] text-gray-200 font-sans;
 }
 .viewport{
   margin-left: 4em;
+}
+
+/* Parent container: Full-page scrolling */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; /* Smooth scrolling */
+
+}
+
+/* Section styles */
+.section {
+
+  height: 100vh; /* Each section occupies full screen height */
+
+  scroll-snap-align: start; /* Snap to the start of each section */
 }
