@@ -4,7 +4,7 @@ import Sidebar from '~/components/sidebar_explorer/sidebar';
 import Aboutme from '~/sections/aboutme';
 import Home from '~/sections/home';
 import Experince from '~/sections/experince';
-import Projects from '~/sections/project';
+import Project from '~/sections/project';
 
 const App: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <Home />
       <Aboutme />
       <Experince />
-      <Projects />
+      <Project />
       </div>
       
       </div>

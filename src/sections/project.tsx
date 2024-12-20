@@ -1,11 +1,12 @@
 
+import Projects from '~/components/projects/projects';
 import './styles.css';
-const Projects: React.FC = () => {
+const Project: React.FC = () => {
   return (
     <div className='projects section' id='projects-section'>
-  
+      <Projects />
     </div>
   );
 };
 
-export default Projects;
+export default Project;
