@@ -31,13 +31,13 @@ const Sidebar: React.FC = () => {
           </a>
         ))}
         </div>
-        <div className="sidebar-links">
+        {/* <div className="sidebar-links">
         {sidebarBottomLinks.map((link, index) => (
           <a key={index} className="link" href={link.href} title={link.label} aria-label={link.label}>
             <span className="icon-wrapper">{link.icon}</span>
           </a>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

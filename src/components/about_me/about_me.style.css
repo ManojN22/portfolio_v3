@@ -1,0 +1,43 @@
+/* src/components/AboutMe.css */
+
+.about-me-container {
+    background-color: #1e1e1e; /* VS Code dark background */
+    color: #d4d4d4; /* VS Code foreground text color */
+    font-family: 'JetBrains Mono', monospace; /* Monospace font for code-like appearance */
+    padding: 20px;
+    height: 95vh;
+    border-bottom:  1px solid hsl(220, 13%, 25.1%);
+  }
+  
+  .section-title {
+    color: #569cd6; /* VS Code blue for section titles */
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #3c3c3c;
+    padding-bottom: 5px;
+  }
+  
+  .bio {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .highlight {
+    color: #dcdcaa; /* VS Code yellow for highlights */
+  }
+  
+  .subsection-title {
+    color: #dcdcaa; /* VS Code yellow for subsection titles */
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .skills-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .skill-item {
+    margin-bottom: 5px;
+  }
+  

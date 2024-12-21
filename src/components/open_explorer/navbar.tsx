@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
-import { FaJs, FaUniversity, FaSlidersH, FaSass, FaTimes } from 'react-icons/fa'; // React Icons
+import { FaJs, FaUniversity, FaSlidersH,  FaInfoCircle } from 'react-icons/fa'; // React Icons
 import './navbar.style.css';
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<{ setNavbar: (value: string) => void }> = ({ setNavbar}) => {
   const [tabs, setTabs] = useState([
-    { href: '/skills', icon: <FaJs size={20} color="#ffca28" />, text: 'skills.js' },
-    { href: '/education', icon: <FaUniversity size={20} color="#42a5f5" />, text: '.educationrc' },
-    { href: '/projects', icon: <FaSlidersH size={20} color="#98c379" />, text: 'projects.config' },
-    { href: '/certificates', icon: <FaSass size={20} color="#e13e76" />, text: 'certificates.sass' },
+    { icon: <FaJs size={20} color="#ffca28" />, text: 'skills.js' , name: "skills"},
+    { icon: <FaUniversity size={20} color="#42a5f5" />, text: '.educationrc' , name: "education" },
+    { icon: <FaInfoCircle size={20} color="#42a5f5" />, text: 'read_about_me.md' , name: "about_me" }
   ]);
 
-  const handleTabClose = (index: number) => {
-    setTabs(tabs.filter((_, i) => i !== index));
-  };
+
 
   return (
     <header className="navbar">
@@ -21,7 +18,7 @@ const Navbar: React.FC = () => {
           {tabs.map((tab, index) => (
             <li className="tab-item" key={index}>
               <span className="tab-content">
-                <a className="tab-link" href={tab.href}>
+                <a className="tab-link" onClick={() => setNavbar( tab.name)}>
                   {tab.icon}
                   <span className="tab-text">{tab.text}</span>
                  
