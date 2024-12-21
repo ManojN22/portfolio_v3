@@ -16,18 +16,21 @@
   font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
 }
+.highlight {
+  color: #42a5f5;
+}
 
 .typing-animation {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 2.5rem;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15em solid #42a5f5;
   width: 0;
   margin-bottom: 1rem;
-  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
-}
-.highlight {
-  color: #42a5f5;
+  animation: typing 3s steps(30, end) forwards, blink-caret 0.7s step-end infinite;
 }
 
 @keyframes typing {
@@ -35,19 +38,21 @@
     width: 0;
   }
   to {
-    width: 21ch; 
+    width: 17ch; 
   }
 }
 
-@keyframes blink {
+@keyframes blink-caret {
   from,
   to {
     border-color: transparent;
   }
   50% {
-    border-color: #42a5f5;
+    border-color: #42a5f5; /* Adjust color as needed */
   }
-} 
+}
+
+
 
 /* .name-container {
     display: flex;

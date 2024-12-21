@@ -16,6 +16,8 @@
   background: #1e1e1e;
   color: #d4d4d4;
   padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   height: 100vh; /* Full screen height */
   width: 100vw !important;
   max-width: 100vw !important;

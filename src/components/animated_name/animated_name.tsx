@@ -26,7 +26,6 @@ const NameAnimation: React.FC = () => {
         }, 2500); 
 
         // Switch every 3 seconds
-    
         return () => clearInterval(interval);
 
       }, [titles.length]);
@@ -35,7 +34,7 @@ const NameAnimation: React.FC = () => {
     <div className="name-container">
     <Shimmer3DScene />
     <div className="middle-container">
-    Hi, I am 
+    Hi, I am {" "} 
     <span className="typing-animation highlight"> Manoj Nandakumar</span>
     <div>{titles[currentTitleIndex]}</div>
     </div>
