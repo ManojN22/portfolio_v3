@@ -6,6 +6,7 @@ import Home from '~/sections/home';
 import Experince from '~/sections/experince';
 import Project from '~/sections/project';
 import Head from 'next/head';
+import Resume from '~/sections/resume';
 const App: React.FC = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const App: React.FC = () => {
       <Aboutme />
       <Experince />
       <Project />
+      <Resume />
       </div>
       
       </div>

@@ -1,0 +1,43 @@
+/* PdfViewer.css */
+.container {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text */
+    /* padding: 20px; */
+    text-align: center;
+  }
+  
+  .pdfViewer {
+    margin-bottom: 20px;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    border: 1px solid #444;
+  }
+  
+  .downloadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .downloadButton:hover {
+    background-color: #007bff;
+  }
+  
+  .downloadIcon {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .downloadText {
+    font-size: 16px;
+  }
+  
