@@ -1,7 +1,7 @@
 /* Full screen container */
 .projects-container {
     height: 100vh; /* Full screen height */
-    width: 95.5vw;  /* Full screen width */
+    width: 95vw;  /* Full screen width */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -85,3 +85,26 @@
   .project-link:hover {
     text-decoration: underline;
   }
+  .project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skill-item {
+    background-color: #606060;
+    color: #cbcbcb;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  

@@ -9,14 +9,22 @@ export interface EducationItem {
   
   export const educationData: EducationItem[] = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Example',
-      duration: '2015 - 2019',
+      degree: 'Masters of Science in Computer Science',
+      institution: 'Stony Brook University - SUNY',
+      duration: '2022 - 2024',
       details: [
-        'Graduated with Honors',
+        'Relevant coursework: Opertaing Systems, Theroy of Database, Artificial Intelligence',
+      ],
+      
+    },
+    {
+      degree: 'Bachelor of Science in Computer Science',
+      institution: 'SRM Institute of Science and Technology',
+      duration: '2018 - 2022',
+      details: [
         'Relevant coursework: Data Structures, Algorithms, Web Development',
       ],
-    },
-    // Add more education items as needed
+      
+    }
   ];
   

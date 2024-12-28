@@ -30,8 +30,12 @@ const cardStyles = [
             </div>
             <div className="project-description-container">
             <p className="project-description">{project.description}</p>
-            <p className="project-skills">{project.skills}</p>
-            <a href={project.link} className="project-link">Learn More</a>
+            <p className="project-skills">
+  {project.skills.map((skill, index) => (
+    <span key={index} className="skill-item">{skill}</span>
+  ))}
+</p>
+            {/* <a href={project.link} className="project-link">Learn More</a> */}
             </div>
           </div>
         ))}

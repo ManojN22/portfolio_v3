@@ -12,14 +12,18 @@ const AboutMe: React.FC = () => {
         Hi, I am <span className="highlight">{aboutMeData.name}</span>
       </p>
       <p className="bio">{aboutMeData.bio}</p>
-      <h3 className="subsection-title">Skills</h3>
-      <ul className="skills-list">
+      <p className='subsection-title'>My Experince</p>
+      <p className="bio">{aboutMeData.bio2}</p>
+      <p className='subsection-title'>what i look for</p>
+      <p className="bio">{aboutMeData.bio3}</p>
+      {/* <h3 className="subsection-title">Skills</h3> */}
+      {/* <ul className="skills-list">
         {aboutMeData.skills.map((skill, index) => (
           <li key={index} className="skill-item">
             {skill}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

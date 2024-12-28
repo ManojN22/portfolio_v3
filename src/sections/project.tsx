@@ -1,4 +1,3 @@
-
 import Projects from '~/components/projects/projects';
 import './styles.css';
 const Project: React.FC = () => {

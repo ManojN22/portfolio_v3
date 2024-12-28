@@ -11,7 +11,8 @@ body {
   @apply bg-[#333333] text-gray-200 font-sans;
 }
 .viewport{
-  margin-left: 4em;
+  margin-left: 4vw;
+  width: 96vw;
 }
 
 /* Parent container: Full-page scrolling */
@@ -27,6 +28,6 @@ body {
 .section {
 
   height: 100vh; /* Each section occupies full screen height */
-
+  
   scroll-snap-align: start; /* Snap to the start of each section */
 }

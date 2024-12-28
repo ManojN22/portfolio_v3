@@ -6,7 +6,7 @@
   font-family: 'JetBrains Mono', monospace; /* Custom monospace font */
   padding: 20px;
   height: 95vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   border-bottom:  1px solid hsl(220, 13%, 25.1%);
 
 
