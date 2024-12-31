@@ -9,10 +9,10 @@ const NameAnimation: React.FC = () => {
         "Cloud Infrastructure",
         "Full Stack Developer",
         "Scroll Down For More",
-        "Still here? I am not a robot so... I am a",
-        "Music Lover",
-        "Biggest Office Fan",
-        "Avid Gamer",
+        "Still here? I am not a robot so... I am",
+        "a Music Lover",
+        "the Biggest Office Fan",
+        "an Avid Gamer",
         "lets loop back to the top"
       ];
     

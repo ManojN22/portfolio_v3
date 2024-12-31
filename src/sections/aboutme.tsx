@@ -11,9 +11,12 @@ const Aboutme: React.FC = () => {
   return (
     <div className='aboutme section' id='aboutme-section'>
       <Navigation  setNavbar={setNavbar}/>
+      <div className='scroll-y-vs-code'>
       {navbar==="skills" && <Skills/>}
       {navbar==="education" && <Education />}
       {navbar==="about_me" && <AboutMe/>}
+      </div>
+      
       
     </div>
   );

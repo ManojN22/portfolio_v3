@@ -17,7 +17,7 @@ const App: React.FC = () => {
       <meta property="og:title" content="Manoj Nandakumar" />
       <meta property="og:description" content="Explore the portfolio of Manoj Nandakumar, showcasing projects in web development, cloud technologies, and machine learning." />
       </Head>
-      <div className='flex flex-row h-screen'>
+      <div>
       <Sidebar/>
 
       <div className='viewport scroll-container '>

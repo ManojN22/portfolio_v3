@@ -11,8 +11,47 @@ body {
   @apply bg-[#333333] text-gray-200 font-sans;
 }
 .viewport{
+  
   margin-left: 4vw;
   width: 96vw;
+}
+.scroll-y-vs-code{
+  height: 95vh!important; 
+  /* overflow-y: scroll; */
+  border-bottom:  1px solid hsl(220, 13%, 25.1%);
+
+}
+@media (max-width: 1024px) {
+  .viewport{
+    margin-left: 6vw;
+    width: 94vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .viewport{
+
+    margin-left: 0;
+    position: fixed;
+    top: 8vh;
+    width: 100vw;
+  }
+  .section {
+
+    height: 92vh!important; /* Each section occupies full screen height */
+    width: 100vw !important;
+    /* overflow-y: scroll; */
+    scroll-snap-align: start; 
+  }
+  .scroll-y-vs-code{
+        height: 87vh!important; 
+        overflow-y: scroll;
+        border-bottom:  1px solid hsl(220, 13%, 25.1%);
+
+  }
+  .scroll{
+     overflow-y: scroll;
+  }
 }
 
 /* Parent container: Full-page scrolling */
@@ -29,5 +68,5 @@ body {
 
   height: 100vh; /* Each section occupies full screen height */
   
-  scroll-snap-align: start; /* Snap to the start of each section */
+  scroll-snap-align: start; 
 }

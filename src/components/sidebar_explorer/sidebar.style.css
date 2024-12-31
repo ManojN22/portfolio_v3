@@ -3,7 +3,7 @@
 .sidebar {
   background-color: #2f2f2f;
   color: #fff;
-  width: 4em; /* Fixed width for sidebar */
+  width: 4vw; /* Fixed width for larger screens */
   height: 100vh; /* Full screen height */
   padding-bottom: 1em;
   padding-top: 1em;
@@ -11,13 +11,14 @@
   position: fixed;
   flex-direction: column;
   justify-content: space-between; /* Align content vertically */
+  transition: width 0.3s; /* Smooth transition for resizing */
 }
 
 .sidebar-links {
   display: flex;
   flex-direction: column;
   gap: 1.5em; /* Space between each icon */
-  
+  padding-top: 20px; /* Adjust top padding for better spacing */
 }
 
 .link {
@@ -40,4 +41,111 @@
   align-items: center;
   width: 2em; /* Set a fixed square size for icons */
   height: 2em; /* Match height and width */
+}
+
+
+
+/* Topbar.css */
+
+.topbar {
+  background-color: #2f2f2f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: top 0.3s ease;
+  display: none; /* Hide top bar by default on large screens */
+}
+
+/* Show the top bar only on medium and smaller screens */
+
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none; /* Hide the hamburger icon by default */
+  cursor: pointer;
+}
+
+.topbar-links {
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+}
+
+.topbar-links .link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.topbar-links .link:hover {
+  color: #42a5f5; /* Hover color */
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 6vw;
+  }
+}
+/* Mobile and medium screens (max-width: 1024px) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .topbar {
+    display: flex;
+  }
+  .topbar-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #2f2f2f;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 2em;
+    display: none;
+  }
+
+  .topbar-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger icon on small and medium screens */
+  }
+}
+
+/* For very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .topbar {
+    padding: 1em 1.5em; /* Adjust padding for small screens */
+  }
+
+  .topbar-links {
+    gap: 1em; /* Reduce space between icons */
+  }
+
+  .topbar-links .link {
+    font-size: 1em; /* Make font size smaller on very small screens */
+  }
 }

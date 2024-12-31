@@ -1,14 +1,22 @@
 /* Container */
 .scroll-down-container {
+  position: absolute;
+  bottom: 2vh;
+  
     text-align: center;
-    z-index: 1000;
-    margin-top: 35vh;
+    /* z-index: 1000; */
+  
     opacity: 1;
     transition: opacity 1s, height 1s, padding 1s, margin 1s; /* Smooth transitions */
     animation: fadeIn 1.5s ease-in-out;
   }
   
-  
+  @media (max-width: 768px) {
+    .scroll-down-container {
+     
+      margin-top: 35vh;
+    }
+  }
   /* Bouncing Arrow */
   .arrow {
     display: inline-block;

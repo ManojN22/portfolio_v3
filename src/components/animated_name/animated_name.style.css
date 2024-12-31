@@ -1,15 +1,21 @@
 /* Container */
 .name-container {
   position: relative;
-  height: 100vh;
-  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
+ 
 
 /* Middle Content Layer */
 .middle-container {
   position: relative;
-  margin-top: 40vh;
+  /* height: 100vh; */
+  /* align-items: center;
+  justify-content: center; */
   z-index: 1; /* Ensures content is on top */
   text-align: center;
   color: #fff;
@@ -32,6 +38,8 @@
   margin-bottom: 1rem;
   animation: typing 3s steps(30, end) forwards, blink-caret 0.7s step-end infinite;
 }
+
+
 
 @keyframes typing {
   from {
