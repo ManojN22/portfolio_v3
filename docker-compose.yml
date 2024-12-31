@@ -1,0 +1,8 @@
+version: '1'
+services:
+  nextjs:
+    build: .
+    ports:
+      - "5054:5054"
+    environment:
+      - PORT=5054
