@@ -1,6 +1,3 @@
-import dynamic from "next/dynamic";
-
-
 import './styles.css';
 import WorkTimeline from "~/components/work_timeline/work_timeline";
 

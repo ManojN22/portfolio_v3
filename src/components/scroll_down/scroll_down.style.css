@@ -1,7 +1,7 @@
 /* Container */
 .scroll-down-container {
   position: absolute;
-  bottom: 2vh;
+  bottom: 10vh;
   
     text-align: center;
     /* z-index: 1000; */

@@ -70,3 +70,7 @@ body {
   
   scroll-snap-align: start; 
 }
+.section-without-height{
+  /* min-height: 100vh; */
+  scroll-snap-align: start; 
+}

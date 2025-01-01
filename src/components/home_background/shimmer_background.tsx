@@ -1,7 +1,6 @@
-import React, { useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
-import * as THREE from "three";
 
 // Main 3D Scene Component
 const Shimmer3DScene: React.FC = () => {

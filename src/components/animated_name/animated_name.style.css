@@ -9,6 +9,17 @@
   overflow: hidden;
 }
  
+@media (max-width: 768px) {
+  .name-container {
+    padding: 20px;
+  }
+  .middle-container {
+    font-size: 1.4rem !important;
+  }
+  .typing-animation{
+    font-size: 1.4rem !important;
+  }
+}
 
 /* Middle Content Layer */
 .middle-container {

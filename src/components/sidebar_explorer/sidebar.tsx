@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './sidebar.style.css';
-import { FaHome, FaUser, FaBriefcase, FaTasks, FaGithub, FaLinkedin, FaCog, FaFilePdf, FaBars, FaTimes  } from 'react-icons/fa'; // Import updated icons
+import { FaHome, FaUser, FaBriefcase, FaTasks, FaGithub, FaLinkedin, FaFilePdf, FaBars, FaTimes  } from 'react-icons/fa'; // Import updated icons
 
 
 const sidebarTopLinks = [
@@ -22,11 +22,7 @@ const sidebarTopLinks = [
   // { href: "https://linkedin.com/in/manoj-nandakumar", label: "LinkedIn", icon: <FaLinkedin size={24} /> },
 
 
-  
 
-  const sidebarBottomLinks = [
-    { href: "/settings", label: "Settings", icon: <FaCog size={24} /> }
-  ];
   
 
 
@@ -63,7 +59,7 @@ const Sidebar: React.FC = () => {
     </div>
     <div className="topbar">
       <div className="topbar-content">
-        <div className="logo">Your Logo</div>
+        <div className="logo">Manoj</div>
         <div className={`menu-icon ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           {isMobileMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>

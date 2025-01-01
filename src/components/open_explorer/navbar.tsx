@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { FaJs, FaUniversity, FaSlidersH,  FaInfoCircle } from 'react-icons/fa'; // React Icons
+import React from 'react';
+import { FaJs, FaUniversity,  FaInfoCircle } from 'react-icons/fa'; // React Icons
 import './navbar.style.css';
 
 const Navbar: React.FC<{ setNavbar: (value: string) => void }> = ({ setNavbar}) => {
-  const [tabs, setTabs] = useState([
+  const tabs = [
     { icon: <FaJs size={20} color="#ffca28" />, text: 'skills.js' , name: "skills"},
     { icon: <FaUniversity size={20} color="#42a5f5" />, text: '.educationrc' , name: "education" },
     { icon: <FaInfoCircle size={20} color="#42a5f5" />, text: 'read_about_me.md' , name: "about_me" }
-  ]);
+  ];
 
 
 

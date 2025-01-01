@@ -6,7 +6,7 @@ import { useState } from 'react';
 import AboutMe from '~/components/about_me/about_me';
 const Aboutme: React.FC = () => {
 
-  var [navbar, setNavbar] = useState("skills");
+  const [navbar, setNavbar] = useState("skills");
 
   return (
     <div className='aboutme section' id='aboutme-section'>

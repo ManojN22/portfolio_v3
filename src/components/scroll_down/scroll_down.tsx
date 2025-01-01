@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import  "./scroll_down.style.css";
 const ScrollDown: React.FC = () => {
 

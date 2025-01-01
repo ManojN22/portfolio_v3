@@ -1,6 +1,5 @@
 import NameAnimation from '~/components/animated_name/animated_name';
 import './styles.css';
-import { useEffect, useState } from 'react';
 const Home: React.FC = () => {
 
 

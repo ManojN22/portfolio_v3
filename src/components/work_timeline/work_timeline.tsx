@@ -2,7 +2,7 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaBriefcase } from "react-icons/fa";
-import { workExperience, WorkExperience } from './work_content'; // Import data and type
+import { workExperience } from './work_content'; // Import data and type
 import "./work_timeline.style.css";
 
 const WorkTimeline: React.FC = () => {
