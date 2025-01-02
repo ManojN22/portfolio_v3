@@ -36,16 +36,25 @@ body {
     top: 8vh;
     width: 100vw;
   }
-  .section {
+  .section-name {
+    height: 92vh !important;
+    scroll-snap-align: none !important; 
+  }
 
-    height: 92vh!important; /* Each section occupies full screen height */
+  .section {
+    height: fit-content !important;
+    min-height: 92vh !important; /* Each section occupies full screen height */
     width: 100vw !important;
     /* overflow-y: scroll; */
-    scroll-snap-align: start; 
+    scroll-snap-align: none !important; 
+  }
+  .section-without-height{
+    scroll-snap-align: none !important; 
+
   }
   .scroll-y-vs-code{
-        height: 87vh!important; 
-        overflow-y: scroll;
+        height: fit-content!important; 
+        /* overflow-y: scroll; */
         border-bottom:  1px solid hsl(220, 13%, 25.1%);
 
   }
@@ -66,6 +75,11 @@ body {
 /* Section styles */
 .section {
 
+  height: 100vh; /* Each section occupies full screen height */
+  
+  scroll-snap-align: start; 
+}
+.section-name {
   height: 100vh; /* Each section occupies full screen height */
   
   scroll-snap-align: start; 

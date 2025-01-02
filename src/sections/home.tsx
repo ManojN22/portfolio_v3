@@ -4,7 +4,7 @@ const Home: React.FC = () => {
 
 
   return (
-    <div className="home section" id='home-section'>
+    <div className="home section-name " id='home-section'>
     <NameAnimation />
     </div>
   );
