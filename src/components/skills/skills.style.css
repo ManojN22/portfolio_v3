@@ -9,6 +9,9 @@
   /* overflow-y: scroll; */
   border-bottom:  1px solid hsl(220, 13%, 25.1%);
 
+  .content section{
+    margin-bottom: 1em;
+  }
 
 h3.section-title {
   color: #42a5f5; /* Light blue for section titles */

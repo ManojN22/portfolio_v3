@@ -9,15 +9,15 @@ export interface Project {
   
   export const projects: Project[] = [
     {
-      title: "Distributed Key-Value Store",
-      description: "Built distributed storage system implementing RAFT, enabling strong consistency and fault tolerance.",
-      skills: ["C++","RAFT"],
-      link: "#"
+      title: "NYC Loved Businesses ",
+      description: "Built a dashboard analyzing how geographic and economic factors correlate with the sustainability of loved businesses in NYC.",
+      skills: ["Data Analytics","Flask", "ReactJS"],
+      link: ""
     },
     {
-      title: "Cloud Monitor",
-      description: "App for CPU utilization, managing Docker containers in ECR, deployed on Amazon EKS with monitoring.",
-      skills: ["Cloud","Docker", "EKS"],
+      title: "SAM Scheduler",
+      description: "SAM Scheduler is an enhancement to the Ubuntu scheduler by integrating an scoring mechanism inspired by the ULE scheduler.",
+      skills: ["C", "Scheduler", "Linux"],
       link: "#"
     },
     {
@@ -27,9 +27,16 @@ export interface Project {
       link: "#"
     },
     {
-      title: "SAM Scheduler",
-      description: "SAM Scheduler is an enhancement to the Ubuntu scheduler by integrating an scoring mechanism inspired by the ULE scheduler.",
-      skills: ["C", "Scheduler", "Linux"],
+      title: "Cloud Monitor",
+      description: "App for CPU utilization, managing Docker containers in ECR, deployed on Amazon EKS with monitoring.",
+      skills: ["Cloud","Docker", "EKS"],
+      link: "#"
+    },
+
+    {
+      title: "Distributed Key-Value Store",
+      description: "Built distributed storage system implementing RAFT, enabling strong consistency and fault tolerance.",
+      skills: ["C++","RAFT"],
       link: "#"
     },
     {
@@ -38,11 +45,6 @@ export interface Project {
       skills: ["Flask","Angular", "YOLOV3"],
       link: "#"
     },
-    {
-      title: "NYC Loved Businesses ",
-      description: "Built a dashboard analyzing how geographic and economic factors correlate with the sustainability of loved businesses in NYC.",
-      skills: ["Data Analytics","Flask", "ReactJS"],
-      link: ""
-    }
+
   ];
   

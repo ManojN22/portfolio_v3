@@ -25,6 +25,8 @@ body {
   width: 96vw;
 }
 .scroll-y-vs-code{
+  /* height: fit-content!important;  */
+  /* min-height: 100% !important; */
   height: 95vh!important; 
   /* overflow-y: scroll; */
   border-bottom:  1px solid hsl(220, 13%, 25.1%);
@@ -62,8 +64,7 @@ body {
 
   }
   .scroll-y-vs-code{
-        height: fit-content!important; 
-        /* overflow-y: scroll; */
+        min-height: 95vh!important; 
         border-bottom:  1px solid hsl(220, 13%, 25.1%);
 
   }

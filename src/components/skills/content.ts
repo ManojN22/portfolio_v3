@@ -31,7 +31,7 @@ export interface TechnicalSkill {
     modern: [
       "Python",
       "JavaScript/TypeScript (2+ years)",
-      "Go (newcomer)",
+      "Go (newbie)",
     ],
     ancient: ["C++(3+ years)","Java (~1 year)", "C#/.NET (~1 years)"],
   };

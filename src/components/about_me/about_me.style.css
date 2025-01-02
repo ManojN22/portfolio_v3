@@ -5,7 +5,8 @@
     color: #d4d4d4; /* VS Code foreground text color */
     font-family: 'JetBrains Mono', monospace; /* Monospace font for code-like appearance */
     padding: 20px;
-    height: 95vh;
+    min-height: 95vh;
+    height: fit-content !important;
     border-bottom:  1px solid hsl(220, 13%, 25.1%);
   }
   
