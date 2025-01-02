@@ -2,13 +2,13 @@ import React,{useState} from 'react';
 import './sidebar.style.css';
 import { FaHome, FaUser, FaBriefcase, FaTasks, FaGithub, FaLinkedin, FaFilePdf, FaBars, FaTimes  } from 'react-icons/fa'; // Import updated icons
 
-
+const pdfUrl = '/M_Nandakumar_up.pdf';
 const sidebarTopLinks = [
     { href: "home-section", label: "Home", icon: <FaHome size={24} /> , type:1},
     { href: "aboutme-section", label: "About Me", icon: <FaUser size={24} /> , type:1},  // Added About Me link
     { href: "experince-section", label: "Work", icon: <FaBriefcase size={24} /> , type:1},
     { href: "projects-section", label: "Projects", icon: <FaTasks size={24} /> , type:1},  
-    { href: "resume-section", label: "Resume", icon: <FaFilePdf size={24} /> , type:1},  
+    { href: pdfUrl, label: "Resume", icon: <FaFilePdf size={24} /> , type:2},  
     { href: "https://github.com/ManojN22", label: "GitHub", icon: <FaGithub size={24} /> , type:2},
     { href: "https://linkedin.com/in/manoj-nandakumar", label: "LinkedIn", icon: <FaLinkedin size={24} /> , type:2},
   ];

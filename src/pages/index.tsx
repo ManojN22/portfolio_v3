@@ -25,7 +25,7 @@ const App: React.FC = () => {
       <Aboutme />
       <Experince />
       <Project />
-      <Resume />
+      {/* <Resume /> */}
       </div>
       
       </div>

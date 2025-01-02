@@ -8,8 +8,16 @@ html {
   overflow-x: hidden;
 }
 
+
+/* Check if any absolute or fixed-positioned elements are off-screen */
+* {
+  position: relative;
+}
+
 body {
   @apply bg-[#333333] text-gray-200 font-sans;
+  position: relative; /* Ensures body is contained properly */
+
 }
 .viewport{
   
